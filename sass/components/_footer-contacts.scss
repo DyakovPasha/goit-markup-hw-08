@@ -1,0 +1,41 @@
+.footer-contacts{
+    margin-right: 70px;
+    width: 231px;
+}
+
+.footer-contacts__adsress{
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.footer-contacts__list{
+
+}
+
+.footer-contacts__item{
+        &+& {
+            margin-top: 9px;
+        }
+}
+
+.footer-contacts__link{
+    color: $acolor;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    transition: color 250ms $timing-function;
+            &:hover,
+            &:focus{
+                color: $color-accent;    
+            }
+    
+}
+
+.footer-contacts__map {
+    color: $color-txt;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    transition: color 250ms $timing-function;
+}
+

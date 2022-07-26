@@ -1,0 +1,55 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
+}
+
+.modal--is-hidden{
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal__container{
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    min-width: 528px;
+    min-height: 581px;
+    background-color: $color-txt;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    transition: transform 250ms $timing-function;
+}
+
+.modal__close-button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-txt;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill 250ms $timing-function;
+
+        &:hover,
+        &:focus {
+        fill: $color-accent;
+        }
+}
+

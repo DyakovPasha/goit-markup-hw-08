@@ -1,0 +1,25 @@
+.logo {
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $color-txt-dark;
+    
+    @media screen and (max-width: 767px){
+        padding: 16px 0;
+        font-size: 24px;
+        line-height: 1.16;
+    }
+}
+
+.logo__left {
+    color: $color-accent;
+}
+
+.logo--footer{
+    color: $color-txt;
+}
+
+
+
+

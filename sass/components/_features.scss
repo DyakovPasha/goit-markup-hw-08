@@ -1,0 +1,45 @@
+.features{
+    @extend %section;
+    padding-bottom: 0px; 
+}
+
+.features__container{
+@extend %container;
+}
+
+.features__list{
+    display: flex;
+    gap: 30px;
+}
+
+.features__item{
+    display: inline-block;
+    
+}
+
+.features__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: $background-color-team;
+    border-radius: 4px;
+}
+
+
+.features__title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features__label{
+    margin-top: 10px;
+
+    line-height: 1.7;
+    color: $color-txt-cont;
+    line-height: 1.7;
+}

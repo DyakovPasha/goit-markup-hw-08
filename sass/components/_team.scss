@@ -1,0 +1,46 @@
+.team{
+    @extend %section;
+    background-color: $background-color-team;
+}
+
+.team__container {
+    @extend %container;
+}
+
+.team__title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+}
+
+.team__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: $background-color-team;
+}
+
+.team__item{
+display: inline-block;
+text-align: center;
+background: $color-txt;
+box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team__name{
+margin-top: 30px;
+margin-bottom: 10px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+}
+
+.team__label{
+    font-size: 16px;
+    line-height: 1.18;
+    color: $color-txt-cont;
+}

@@ -1,0 +1,32 @@
+.social{
+    margin-top: 16px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social__link{
+    display: flex;
+    padding: 12px;
+    border-radius: 50%;
+    background-color: $color-txt;
+    fill: $border-color;
+    transition: fill 250ms $timing-function, background-color 250ms $timing-function;
+
+        &:hover,
+        &:focus,
+        &:active {
+                fill: $color-txt;
+                background-color: $color-accent;
+        }
+}
+
+.social--footer{
+margin: 0;
+}
+
+.social__link--footer{
+    fill: $color-txt;
+    background-color: $bcolor;
+}
