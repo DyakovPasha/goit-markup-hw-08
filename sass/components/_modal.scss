@@ -24,12 +24,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    min-width: 528px;
-    min-height: 581px;
+    width: 450px;
     background-color: $color-txt;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     transition: transform 250ms $timing-function;
+        @media screen and (max-width: 479px) {
+            width: calc(100% - 30px);
+        }
+        @media screen and (min-width: 1200px) {
+            width: 528px;
+        }
+    
 }
 
 .modal__close-button{
