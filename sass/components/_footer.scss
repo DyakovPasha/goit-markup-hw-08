@@ -1,14 +1,20 @@
 .footer{
-    display: flex;
     background-color: $background-color-dark;
     padding: 60px 0;
 }
 
 .footer__container{
-    display: flex;
-    align-items: baseline;
-    width: 1200px;
+    
     padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0 auto;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+   
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: baseline;
+            width: 1200px;
+        }
+        
 }
