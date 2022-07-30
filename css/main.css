@@ -986,7 +986,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team__container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
