@@ -1013,9 +1013,13 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (max-width: 1199px) {
+  .team__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .team__item {
@@ -1098,6 +1102,11 @@ img {
   margin: 0 auto;
   max-width: 480px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    max-width: 768px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients {
     max-width: 1200px;
@@ -1179,11 +1188,24 @@ img {
 
 .footer__container {
   padding: 0 15px;
-  margin-left: 0 auto;
+  margin: 0 auto;
 }
 @media screen and (max-width: 767px) {
   .footer__container {
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__container {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1199,6 +1221,14 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-contacts {
+    margin-left: 61px;
+    margin-right: 165px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-right: 70px;
@@ -1253,10 +1283,21 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-social__title {
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .footer-form {
     margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-form {
+    text-align: center;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1348,16 +1389,10 @@ img {
   letter-spacing: 0.06em;
   fill: #FFFFFF;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-form__submit {
+    margin: auto;
     margin-top: 20px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .footer-form__submit {
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {

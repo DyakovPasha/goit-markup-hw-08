@@ -1,5 +1,11 @@
 .footer-contacts{
-
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-left: 61px;
+            margin-right: 165px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        
         @media screen and (min-width: 1200px) {
             margin-right: 70px;
         }

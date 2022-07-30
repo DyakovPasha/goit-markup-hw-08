@@ -2,15 +2,20 @@
     padding: 60px 0;
     margin: 0 auto;
     max-width: 480px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            max-width: 768px;
+        }
+    
         @media screen and (min-width: 1200px) {
             max-width: 1200px;
         }
+        
     
 }
 
 .clients__container{
    @extend %container;
-   
 }
 
 .clients__title{
@@ -20,7 +25,9 @@
     font-size: 28px;
     line-height: 1.17;
 
-        @media screen and (min-width: 1200px) {font-size: 36px;}
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+        }
 }
 
 .clients__list{
@@ -37,17 +44,15 @@
         @media screen and (min-width: 320px){
             width: 210px;
         }
-        @media screen and (max-width: 767px) {
-            
+
+       
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 226px;
         }
         
-            @media screen and (min-width: 768px) and (max-width: 1199px) {
-                width: 226px;
-            }
-        
-            @media screen and (min-width: 1200px) {
-                width: 170px;
-            }
+        @media screen and (min-width: 1200px) {
+            width: 170px;
+        }
 
     
 }
