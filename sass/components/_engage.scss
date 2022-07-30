@@ -1,14 +1,17 @@
+
 .engage{
     display: none;
-    @extend %section;
-        @media screen and (min-width: 1200px){
-            width: 1200px;
-            display: flex;
-        }
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        display: flex
+    }
+
 }
 
 .engage__container{
     @extend %container;
+
 }
 
 .engage__caption{

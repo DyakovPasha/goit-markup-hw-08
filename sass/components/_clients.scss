@@ -1,7 +1,10 @@
 .clients{
     padding: 60px 0;
-        margin: 0 auto;
-        max-width: 480px;
+    margin: 0 auto;
+    max-width: 480px;
+        @media screen and (min-width: 1200px) {
+            max-width: 1200px;
+        }
     
 }
 

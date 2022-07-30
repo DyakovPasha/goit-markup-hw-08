@@ -12,15 +12,14 @@
   margin: -1px;
 }
 
-.portfolio, .engage {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .portfolio__container, .clients__container, .engage__container, .features__container {
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -555,6 +554,8 @@ img {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
+    max-height: 120px;
   }
 }
 
@@ -836,24 +837,41 @@ img {
   .features {
     max-width: 1200px;
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 
+.features__list {
+  display: block;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .features__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 30px;
   }
 }
 
-.features__item {
-  display: inline-block;
-  max-width: 450px;
+@media screen and (max-width: 767px) {
+  .features__item + .features__item {
+    max-width: 450px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features__item {
+    width: 354px;
+  }
 }
 
 .features__box {
@@ -896,7 +914,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .engage {
-    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -949,8 +968,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .team {
-    max-width: 1200px;
     padding: 94px 0;
+    margin: auto;
   }
 }
 
@@ -959,6 +978,16 @@ img {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__container {
+    width: 1200px;
+  }
 }
 
 .team__title {
@@ -990,12 +1019,22 @@ img {
 }
 
 .team__item {
-  text-align: center;
   background: #FFFFFF;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
   max-width: 450px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
 }
 
 .team__name {
@@ -1058,6 +1097,11 @@ img {
   padding: 60px 0;
   margin: 0 auto;
   max-width: 480px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    max-width: 1200px;
+  }
 }
 
 .clients__title {
@@ -1150,7 +1194,8 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    width: 1200px;
+    max-width: 1200px;
+    margin: auto;
   }
 }
 
