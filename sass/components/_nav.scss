@@ -1,12 +1,55 @@
 .nav {
-    display: inline-flex;
-    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+        align-items: center;
+    }
+    
 }
+
+.nav__list {
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    font-size: 40px;
+    
+    
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: 88px;
+            margin-right: 84px;
+            line-height: 1.14;
+            font-size: 14px;
+            }
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 93px;
+            margin-right: 305px;
+        }
+
+    
+}
+
+.nav__item {
+        @media screen and (max-width: 767px) {
+            &+&{
+                margin-top: 32px;
+            }
+        }
+    
+        @media screen and (min-width: 768px)  {
+            display: flex;
+                &:not(:last-child) {
+                margin-right: 50px;
+                }
+            
+        }
+}
+
 .nav__link {
     position: relative;
     display: flex;
-    padding: 32px 0;
-
     color: $color-txt-dark;
     transition: color 250ms $timing-function;
 
@@ -14,45 +57,31 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-        &:hover,
-        &:focus {
-            color: $color-accent;
-        }
-    
+    &:hover,
+    &:focus {
+        color: $color-accent;
+    }
+
+                @media screen and (min-width: 768px) {
+                    padding: 32px 0;
+        
+                }
 }
 
-.nav__link--current{
+.nav__link--current {
+    @media screen and (min-width: 768px) {
         position: relative;
-        color: $color-accent;    
+        color: $color-accent;
+
         &::after {
-            content:'';
+            content: '';
             position: absolute;
             width: 100%;
             height: 4px;
             bottom: -1px;
             left: 0;
             border-radius: 2px;
-            background-color: $color-accent;        
+            background-color: $color-accent;
         }
-}
-
-.nav__item {
-    display: flex;
-    &:not(:last-child) {
-            margin-right: 50px;
-        }
-                   @media screen and (max-width: 767px)  {
-            display: none;
-        }
-}
-
-
-.nav__list {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
-    margin-left: 93px;
-
-        
+    }
 }

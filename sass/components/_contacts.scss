@@ -1,15 +1,23 @@
 .contacts{
-    margin-left: auto;
+        @media screen and (max-width: 767px) {
+            margin-top: 306px;
+            
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+
+        }
+    
 }
 .contacts__list{
     display: flex;
-    
         @media screen and (max-width: 767px) {
-            display: none;
+            flex-direction: column-reverse;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
-            display: block;
+            flex-direction: column;
             
         }
 }
@@ -17,12 +25,19 @@
 .contacts__item + .contacts__item {
     @media screen and (min-width: 768px) and (max-width: 1199px){
     margin-top: 10px;}
-    } 
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
+    }
+    
+            
+    }
 
 .contacts__link{
     font-style: normal;
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 34px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: $color-txt-cont;
     transition: color 250ms $timing-function, fill 250ms $timing-function;
@@ -30,12 +45,23 @@
     
 
         @media screen and (min-width: 768px) and (max-width: 1199px) {
+            font-size: 12px;
             line-height: 1.16;
     }
         @media screen and (min-width: 1200px) {
-            margin-left: 50px;
-            padding: 32px 0;
+                
+            font-size: 14px;
+            line-height: 1.14;
+            
     }
+}
+
+.contacts__link--mail{
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.16;
+        margin-top: 32px;
+        }
 }
 
 .contacts__link:hover,
@@ -45,6 +71,10 @@
 }
 
 .contacts__icon{
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+
     fill: currentColor;
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             margin-right: 8px;
