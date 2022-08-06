@@ -601,6 +601,11 @@ img {
   text-align: center;
   padding: 118px 0px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/img-back-grnd2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
@@ -817,6 +822,9 @@ img {
 .form__chekbox {
   margin-top: 20px;
   margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .form__label-checkbox {
