@@ -52,7 +52,9 @@
 }
 
 .portfolio__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition: box-shadow 250ms $timing-function;
         &:hover,
         &:focus {
@@ -68,6 +70,7 @@
     border-left: 1px solid $color-border-item;
     border-bottom: 1px solid $color-border-item;
     border-right: 1px solid $color-border-item;
+    flex-grow: 1;
 }
 
 .portfolio__name{
@@ -76,12 +79,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-
-        @media screen and (min-width: 1200px) {
-            letter-spacing: 0.06em;
-        }
-
-    
+    letter-spacing: 0.06em;   
 }
 
 .portfolio__description {
